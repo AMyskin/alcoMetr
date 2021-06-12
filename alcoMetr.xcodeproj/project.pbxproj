@@ -39,6 +39,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A159F102674C59100348FAB /* Analitics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Analitics;
+			sourceTree = "<group>";
+		};
+		0A159F122674C5D700348FAB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0A159F132674C5E700348FAB /* managers */,
+				0A159F142674C5F600348FAB /* screens */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		0A159F132674C5E700348FAB /* managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
+		0A159F142674C5F600348FAB /* screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
 		1B6CE27C266CEDA7003FDBD0 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +88,8 @@
 		1B6CE287266CEDA7003FDBD0 /* alcoMetr */ = {
 			isa = PBXGroup;
 			children = (
+				0A159F122674C5D700348FAB /* src */,
+				0A159F102674C59100348FAB /* Analitics */,
 				1B6CE288266CEDA7003FDBD0 /* AppDelegate.swift */,
 				1B6CE28A266CEDA7003FDBD0 /* SceneDelegate.swift */,
 				1B6CE28C266CEDA7003FDBD0 /* ViewController.swift */,
