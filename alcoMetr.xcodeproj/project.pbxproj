@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,15 @@
 		1B6CE292266CEDAA003FDBD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6CE291266CEDAA003FDBD0 /* Assets.xcassets */; };
 		1B6CE295266CEDAA003FDBD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6CE293266CEDAA003FDBD0 /* LaunchScreen.storyboard */; };
 		1B6CE2A2266CEF14003FDBD0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CE2A1266CEF14003FDBD0 /* LoginViewController.swift */; };
+		1BAB9E422691BC78001E9267 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB9E412691BC78001E9267 /* User.swift */; };
+		1BAB9E442691BF4B001E9267 /* FBDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB9E432691BF4B001E9267 /* FBDatabase.swift */; };
+		1BF6DE4C2691A85A00AC79C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BF6DE4B2691A85A00AC79C2 /* GoogleService-Info.plist */; };
+		1BF6DE4F2691AA2E00AC79C2 /* FBAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF6DE4E2691AA2E00AC79C2 /* FBAuth.swift */; };
+		61720D3A01D82149FEECBCA8 /* Pods_alcoMetr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242270122064921CF341393D /* Pods_alcoMetr.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11F93C4817F327B7FCB66D13 /* Pods-alcoMetr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alcoMetr.release.xcconfig"; path = "Target Support Files/Pods-alcoMetr/Pods-alcoMetr.release.xcconfig"; sourceTree = "<group>"; };
 		1B6CE285266CEDA7003FDBD0 /* alcoMetr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alcoMetr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6CE288266CEDA7003FDBD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B6CE28A266CEDA7003FDBD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +31,13 @@
 		1B6CE291266CEDAA003FDBD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B6CE294266CEDAA003FDBD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B6CE296266CEDAA003FDBD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B6CE2A1266CEF14003FDBD0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1B6CE2A1266CEF14003FDBD0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../screens/LoginViewController.swift; sourceTree = "<group>"; };
+		1BAB9E412691BC78001E9267 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1BAB9E432691BF4B001E9267 /* FBDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBDatabase.swift; sourceTree = "<group>"; };
+		1BF6DE4B2691A85A00AC79C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1BF6DE4E2691AA2E00AC79C2 /* FBAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBAuth.swift; sourceTree = "<group>"; };
+		242270122064921CF341393D /* Pods_alcoMetr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alcoMetr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D60468F98E87D7DED84EF7 /* Pods-alcoMetr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alcoMetr.debug.xcconfig"; path = "Target Support Files/Pods-alcoMetr/Pods-alcoMetr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61720D3A01D82149FEECBCA8 /* Pods_alcoMetr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +71,7 @@
 		0A159F132674C5E700348FAB /* managers */ = {
 			isa = PBXGroup;
 			children = (
+				1BF6DE4D2691A9F800AC79C2 /* Auth */,
 			);
 			path = managers;
 			sourceTree = "<group>";
@@ -65,6 +79,7 @@
 		0A159F142674C5F600348FAB /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				1B6CE2A1266CEF14003FDBD0 /* LoginViewController.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -74,6 +89,8 @@
 			children = (
 				1B6CE287266CEDA7003FDBD0 /* alcoMetr */,
 				1B6CE286266CEDA7003FDBD0 /* Products */,
+				D8118D427C82D4490A44FFAE /* Pods */,
+				833B57B110FF8CD7093AD22B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,13 +110,41 @@
 				1B6CE288266CEDA7003FDBD0 /* AppDelegate.swift */,
 				1B6CE28A266CEDA7003FDBD0 /* SceneDelegate.swift */,
 				1B6CE28C266CEDA7003FDBD0 /* ViewController.swift */,
-				1B6CE2A1266CEF14003FDBD0 /* LoginViewController.swift */,
 				1B6CE28E266CEDA7003FDBD0 /* Main.storyboard */,
 				1B6CE291266CEDAA003FDBD0 /* Assets.xcassets */,
 				1B6CE293266CEDAA003FDBD0 /* LaunchScreen.storyboard */,
+				1BF6DE4B2691A85A00AC79C2 /* GoogleService-Info.plist */,
 				1B6CE296266CEDAA003FDBD0 /* Info.plist */,
 			);
 			path = alcoMetr;
+			sourceTree = "<group>";
+		};
+		1BF6DE4D2691A9F800AC79C2 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1BF6DE4E2691AA2E00AC79C2 /* FBAuth.swift */,
+				1BAB9E432691BF4B001E9267 /* FBDatabase.swift */,
+				1BAB9E412691BC78001E9267 /* User.swift */,
+			);
+			name = Auth;
+			path = ../../../managers/Auth;
+			sourceTree = "<group>";
+		};
+		833B57B110FF8CD7093AD22B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				242270122064921CF341393D /* Pods_alcoMetr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8118D427C82D4490A44FFAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70D60468F98E87D7DED84EF7 /* Pods-alcoMetr.debug.xcconfig */,
+				11F93C4817F327B7FCB66D13 /* Pods-alcoMetr.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B6CE299266CEDAA003FDBD0 /* Build configuration list for PBXNativeTarget "alcoMetr" */;
 			buildPhases = (
+				9FD7FC338A0477F4EAC9595C /* [CP] Check Pods Manifest.lock */,
 				1B6CE281266CEDA7003FDBD0 /* Sources */,
 				1B6CE282266CEDA7003FDBD0 /* Frameworks */,
 				1B6CE283266CEDA7003FDBD0 /* Resources */,
+				039F36CAA2CF5912CBEF2714 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,12 +207,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B6CE295266CEDAA003FDBD0 /* LaunchScreen.storyboard in Resources */,
+				1BF6DE4C2691A85A00AC79C2 /* GoogleService-Info.plist in Resources */,
 				1B6CE292266CEDAA003FDBD0 /* Assets.xcassets in Resources */,
 				1B6CE290266CEDA7003FDBD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		039F36CAA2CF5912CBEF2714 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alcoMetr/Pods-alcoMetr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alcoMetr/Pods-alcoMetr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-alcoMetr/Pods-alcoMetr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FD7FC338A0477F4EAC9595C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alcoMetr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B6CE281266CEDA7003FDBD0 /* Sources */ = {
@@ -174,7 +264,10 @@
 			files = (
 				1B6CE2A2266CEF14003FDBD0 /* LoginViewController.swift in Sources */,
 				1B6CE28D266CEDA7003FDBD0 /* ViewController.swift in Sources */,
+				1BAB9E422691BC78001E9267 /* User.swift in Sources */,
+				1BF6DE4F2691AA2E00AC79C2 /* FBAuth.swift in Sources */,
 				1B6CE289266CEDA7003FDBD0 /* AppDelegate.swift in Sources */,
+				1BAB9E442691BF4B001E9267 /* FBDatabase.swift in Sources */,
 				1B6CE28B266CEDA7003FDBD0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,12 +412,14 @@
 		};
 		1B6CE29A266CEDAA003FDBD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D60468F98E87D7DED84EF7 /* Pods-alcoMetr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X98JSWP28N;
 				INFOPLIST_FILE = alcoMetr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,18 +427,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = home.amyskin.alcoMetr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1B6CE29B266CEDAA003FDBD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F93C4817F327B7FCB66D13 /* Pods-alcoMetr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X98JSWP28N;
 				INFOPLIST_FILE = alcoMetr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,7 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = home.amyskin.alcoMetr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
