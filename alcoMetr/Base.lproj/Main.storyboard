@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5MH-bj-bXX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="alcoMetr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="alcoMetr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,9 +115,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="changeAuthLable" destination="sPg-VG-epG" id="5gd-oS-hg8"/>
                         <outlet property="email" destination="hZG-NV-mfW" id="O1Q-J0-5rm"/>
+                        <outlet property="mainButton" destination="PrJ-TI-ytZ" id="ewG-7c-M6m"/>
                         <outlet property="name" destination="Rh3-RB-Pv8" id="AaT-iQ-FwJ"/>
                         <outlet property="password" destination="Qtg-Tg-mwX" id="Evh-GC-Fa5"/>
+                        <outlet property="secondButton" destination="eKQ-W7-6YU" id="U3v-s6-ZSd"/>
                         <outlet property="titleLabel" destination="36o-24-hyz" id="NmM-Pa-NVi"/>
                     </connections>
                 </viewController>
@@ -128,7 +131,7 @@
         <!--AlcoMetr-->
         <scene sceneID="k1i-u3-83r">
             <objects>
-                <viewController id="vmC-HC-KmX" sceneMemberID="viewController">
+                <viewController id="vmC-HC-KmX" customClass="MainVC" customModule="alcoMetr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mgr-Jv-XnX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,6 +141,9 @@
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="DrinkDay"/>
+                                <connections>
+                                    <action selector="drinkButton:" destination="vmC-HC-KmX" eventType="touchUpInside" id="Un7-af-shj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mbX-yJ-xQd"/>
@@ -148,7 +154,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="AlcoMetr" id="JhE-jY-PGO">
-                        <barButtonItem key="leftBarButtonItem" title="Выход" id="jYV-we-D5t"/>
+                        <barButtonItem key="leftBarButtonItem" title="Выход" id="jYV-we-D5t">
+                            <connections>
+                                <action selector="back:" destination="vmC-HC-KmX" id="UXO-9E-Jov"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rab-LA-NLd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
