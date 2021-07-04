@@ -73,15 +73,7 @@ class LoginViewController: UIViewController {
                         self?.dismiss(animated: true, completion: nil)
                     case .failure(let error):
                         self?.showAlert(with: error.localizedDescription)
-  //                        print ("Error loadUser")
                     }
-
-//                    if let result = try result.get() {
-//                        self?.dismiss(animated: true, completion: nil)
-//                    } else {
-//                        self?.showAlert(with: "Error loadUser")
-//                        print ("Error loadUser")
-//                    }
                 }
             }
         }

@@ -12,7 +12,7 @@ struct User {
     let name: String
     let email: String
     let password: String
-    let date: String
+    var date: String
     let isDrinkDay: Bool = false
     let dayCountDrink: Int
     let alcoDay: Int

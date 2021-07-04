@@ -10,12 +10,14 @@ final class FBAuth {
     static let shared = FBAuth()
     private init () {}
     
-    func isAuth(completion: @escaping (Bool) -> Void) {
+    func isAuth(completion: @escaping (Result<FirebaseAuth.User, Error>) -> Void) {
         Auth.auth().addStateDidChangeListener { auth, user in
-            if user == nil {
-                completion(false)
+            if let user = user {
+                completion(.success(user))
             }
-            completion(true)
+            if user == nil {
+                completion(.failure(authError.noAuth))
+            }
         }
     }
     
@@ -57,4 +59,8 @@ final class FBAuth {
     func logoutAction() {
         let _ = try? Auth.auth().signOut()
     }
+}
+
+enum authError:Error {
+    case noAuth
 }

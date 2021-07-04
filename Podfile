@@ -9,5 +9,6 @@ target 'alcoMetr' do
    pod 'Firebase/Analytics'
    pod 'Firebase/Auth'
    pod 'Firebase/Database'
+pod 'FSCalendar'
 
 end

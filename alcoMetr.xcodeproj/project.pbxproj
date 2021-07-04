@@ -18,6 +18,8 @@
 		1BAB9E512691D3CF001E9267 /* FBDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB9E4E2691D3CF001E9267 /* FBDatabase.swift */; };
 		1BAB9E522691D3CF001E9267 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB9E4F2691D3CF001E9267 /* User.swift */; };
 		1BC926C62691E169003EFE42 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC926C52691E169003EFE42 /* AuthRouter.swift */; };
+		1BD0C2E826922C4F00480317 /* DrinkDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD0C2E726922C4F00480317 /* DrinkDays.swift */; };
+		1BD0C2EA269238AE00480317 /* DIYCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD0C2E9269238AE00480317 /* DIYCalendarCell.swift */; };
 		1BF6DE4C2691A85A00AC79C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BF6DE4B2691A85A00AC79C2 /* GoogleService-Info.plist */; };
 		61720D3A01D82149FEECBCA8 /* Pods_alcoMetr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242270122064921CF341393D /* Pods_alcoMetr.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +39,8 @@
 		1BAB9E4E2691D3CF001E9267 /* FBDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FBDatabase.swift; path = managers/Auth/FBDatabase.swift; sourceTree = SOURCE_ROOT; };
 		1BAB9E4F2691D3CF001E9267 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = managers/Auth/User.swift; sourceTree = SOURCE_ROOT; };
 		1BC926C52691E169003EFE42 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		1BD0C2E726922C4F00480317 /* DrinkDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDays.swift; sourceTree = "<group>"; };
+		1BD0C2E9269238AE00480317 /* DIYCalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIYCalendarCell.swift; sourceTree = "<group>"; };
 		1BF6DE4B2691A85A00AC79C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		242270122064921CF341393D /* Pods_alcoMetr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alcoMetr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D60468F98E87D7DED84EF7 /* Pods-alcoMetr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alcoMetr.debug.xcconfig"; path = "Target Support Files/Pods-alcoMetr/Pods-alcoMetr.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 				1BAB9E4D2691D3CF001E9267 /* FBAuth.swift */,
 				1BAB9E4E2691D3CF001E9267 /* FBDatabase.swift */,
 				1BAB9E4F2691D3CF001E9267 /* User.swift */,
+				1BD0C2E726922C4F00480317 /* DrinkDays.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 		1BC926C82691E244003EFE42 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1BD0C2E9269238AE00480317 /* DIYCalendarCell.swift */,
 				1B6CE28C266CEDA7003FDBD0 /* MainVC.swift */,
 			);
 			path = Main;
@@ -272,9 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD0C2E826922C4F00480317 /* DrinkDays.swift in Sources */,
 				1BC926C62691E169003EFE42 /* AuthRouter.swift in Sources */,
 				1BAB9E4C2691D3B5001E9267 /* LoginViewController.swift in Sources */,
 				1BAB9E512691D3CF001E9267 /* FBDatabase.swift in Sources */,
+				1BD0C2EA269238AE00480317 /* DIYCalendarCell.swift in Sources */,
 				1BAB9E502691D3CF001E9267 /* FBAuth.swift in Sources */,
 				1B6CE28D266CEDA7003FDBD0 /* MainVC.swift in Sources */,
 				1B6CE289266CEDA7003FDBD0 /* AppDelegate.swift in Sources */,
